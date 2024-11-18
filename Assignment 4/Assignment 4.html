@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Continuing Education Course Evaluation Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="nav">
+            <a href="https://www.centennialcollege.ca/" target="_blank">
+                <img class="logo" src="img/centennialcollege_logo.jpg" alt="Centennial College Logo">
+            </a>
+            <div class="nav-links">
+                <li>
+                    <a href="../index.html">Homepage</a>
+                </li>
+            </div>
+        </header>
+
+        <form id="evaluation-form" method="post" action="thankyou.html">
+            <h2 class="title">Centennial College</h2>
+            <h3 class="topic">Continuing Education Course/Instructor Evaluation</h3>
+            <p>Please read each statement carefully and consider each one individually. <strong>Give only one answer</strong> for each question.</p>
+
+            <section>
+                <label for="course-code">
+                    <strong>Course Name/Code:</strong>
+                </label>
+                <input type="text" id="courseCode" name="courseCode" required>
+
+                <div class="semester-group">
+                    <label>Semester:</label>
+                    <label class="year"><input type="radio" name="semester" value="Fall" required> Fall</label>
+                    <label class="year"><input type="radio" name="semester" value="Winter" required> Winter</label>
+                    <label class="year"><input type="radio" name="semester" value="Spring/Summer" required> Spring/Summer</label>
+                </div>
+                
+                <label for="year"><strong>Year:</strong></label>
+                <input type="text" id="year" name="year" required>
+
+                <label for="instructor"><strong>Instructor:</strong></label>
+                <input type="text" id="instructor" name="instructor" required>
+            </section>
+
+            <section>
+                <h2 class="field">Instructor</h2>
+                <p>How would you rate the instructor's:</p>
+                <label>1. Knowledge of subject:</label>
+                <label><input type="radio" name="knowledge" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="knowledge" value="Good" required> Good</label>
+                <label><input type="radio" name="knowledge" value="Fair" required> Fair</label>
+                <label><input type="radio" name="knowledge" value="Not Satisfactory" required> Not Satisfactory</label>
+
+                <label>2. Helpfulness:</label>
+                <label><input type="radio" name="helpfulness" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="helpfulness" value="Good" required> Good</label>
+                <label><input type="radio" name="helpfulness" value="Fair" required> Fair</label>
+                <label><input type="radio" name="helpfulness" value="Not Satisfactory" required> Not Satisfactory</label>
+
+                <label>3. Courtesy and respect for all students:</label>
+                <label><input type="radio" name="courtesy" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="courtesy" value="Good" required> Good</label>
+                <label><input type="radio" name="courtesy" value="Fair" required> Fair</label>
+                <label><input type="radio" name="courtesy" value="Not Satisfactory" required> Not Satisfactory</label>
+
+                <label>4. Communication skills:</label>
+                <label><input type="radio" name="communication" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="communication" value="Good" required> Good</label>
+                <label><input type="radio" name="communication" value="Fair" required> Fair</label>
+                <label><input type="radio" name="communication" value="Not Satisfactory" required> Not Satisfactory</label>
+
+                <label>5. Overall performance:</label>
+                <label><input type="radio" name="performance" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="performance" value="Good" required> Good</label>
+                <label><input type="radio" name="performance" value="Fair" required> Fair</label>
+                <label><input type="radio" name="performance" value="Not Satisfactory" required> Not Satisfactory</label>
+            </section>
+
+            <section>
+                <h2 class="field">Course</h2>
+                <label>6. How would you rate the course materials?</label>
+                <label><input type="radio" name="materials" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="materials" value="Good" required> Good</label>
+                <label><input type="radio" name="materials" value="Fair" required> Fair</label>
+                <label><input type="radio" name="materials" value="Not Satisfactory" required> Not Satisfactory</label>
+
+                <label>7. How much did this course meet your expectations?</label>
+                <label><input type="radio" name="expectations" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="expectations" value="Good" required> Good</label>
+                <label><input type="radio" name="expectations" value="Fair" required> Fair</label>
+                <label><input type="radio" name="expectations" value="Not Satisfactory" required> Not Satisfactory</label>
+
+                <label>8. How would you rate this course (overall)?</label>
+                <label><input type="radio" name="course_overall" value="Excellent" required> Excellent</label>
+                <label><input type="radio" name="course_overall" value="Good" required> Good</label>
+                <label><input type="radio" name="course_overall" value="Fair" required> Fair</label>
+                <label><input type="radio" name="course_overall" value="Not Satisfactory" required> Not Satisfactory</label>
+            </section>
+
+            <section>
+                <h2 class="field">General Information</h2>
+                <label>9. Was the course outline reviewed/explained at the beginning of your course?</label>
+                <label><input type="radio" name="outline" value="Yes" required> Yes</label>
+                <label><input type="radio" name="outline" value="No" required> No</label>
+                <label><input type="radio" name="outline" value="Not Sure" required> Not Sure</label>
+
+                <label>10. Would you recommend this course to a friend with the same interests?</label>
+                <label><input type="radio" name="recommend" value="Yes" required> Yes</label>
+                <label><input type="radio" name="recommend" value="No" required> No</label>
+                <label><input type="radio" name="recommend" value="Not Sure" required> Not Sure</label>
+            </section>
+
+            <section>
+                <h2 class="field">Any Other Comments</h2>
+                <label for="bestThing">11. What is the best thing about this course?</label>
+                <textarea id="bestThing" name="bestThing" rows="2"></textarea>
+
+                <label for="improvement">12. How could we improve this course?</label>
+                <textarea id="improvement" name="improvement" rows="2"></textarea>
+
+                <label for="other">13. Other:</label>
+                <textarea id="other" name="other" rows="2"></textarea>
+            </section>
+
+            <button type="submit">Submit Evaluation</button>
+            <button class="reset" type="reset">Reset</button>
+
+            <div class="contact">
+                <p>Thank you! We pay attention to your feedback!</p>
+                <p class="link"><strong>Web:</strong> <a href="https://www.centennialcollege.ca/continuing_education" target="_blank">www.centennialcollege.ca/continuing_education</a></p>
+                <p class="link"><strong>Email:</strong> <a href="mailto: continuingeducation@centennialcollege.ca" target="_blank">continuingeducation@centennialcollege.ca</a></p>
+            </div>
+        </form>
+
+        <footer>
+            <h6>&copy;&nbsp;Copyright Joshua Gates | COMP213 | Assignment 4 | <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span></h6>
+        </footer>
+    </body>
+</html>
