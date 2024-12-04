@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 45, 45);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    margin: 5px 0 0;
+    font-style: italic;
+}
+.menu-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #d0d0d0;
+    color: #b22222;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.menu-section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.menu-section li {
+    display: inline-block;
+}
+.menu-section a {
+    text-decoration: none;
+    color: rgb(146, 0, 0);
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: 1px solid rgb(146, 0, 0);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.menu-section a:hover {
+    background-color: rgb(146, 0, 0);
+    color: #fff;
+}
+
+
+.menu-item {
+    margin: 15px 0;
+}
+.menu-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+.menu-item p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
