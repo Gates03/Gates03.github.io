@@ -46,6 +46,11 @@ header p {
     color: #fff;
 }
 
+.align {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 .menu-item {
     margin: 15px 0;
